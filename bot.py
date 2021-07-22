@@ -20,7 +20,7 @@ app = Client("bitlybot" ,bot_token = TOKEN ,api_id = API_ID ,api_hash = API_HASH
 
 @app.on_message(filters.private & filters.command(['start']))
 async def start(client,message):
-  await message.reply_text(f"Hello {message .from_user.first_name}\nhello I am a bot used to create short link \n made by RAGU G find me on instagram I'd is ragug19 or click this link https://www.instagram.com/ragug19?r=nametag You can find telegram sticker package on this instagram I'd in story highlights use and enjoy ", reply_to_message_id = message.message_id)
+  await message.reply_text(f"Hello {message .from_user.first_name}\nHello I am a bot used to create short link \nFind me on instagram I'd is ragug19 or click this link https://www.instagram.com/ragug19?r=nametag \nYou can find telegram sticker package on this instagram I'd in story highlights use and 🥳 enjoy ", reply_to_message_id = message.message_id)
   
 @app.on_message(filters.private & filters.regex("http|https"))
 async def Bitly(client,message):
